@@ -18,7 +18,9 @@ const MONGO_URL = process.env.MONGO_URL;
 
 //connect mongoose
 mongoose.set("strictQuery", true);
-mongoose.connect(MONGO_URL);
+mongoose.connect(
+  "mongodb+srv://jaykumarm416:T8E7pRMGZEt6d3ZO@cluster0.mrtwxtk.mongodb.net/flutter"
+);
 
 const db = mongoose.connection;
 
