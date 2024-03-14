@@ -1,15 +1,23 @@
 const mongoose = require("mongoose");
 
 let dataSchema = new mongoose.Schema({
-  pname: {
+  name: {
     require: true,
     type: String,
   },
-  pprice: {
+  isOpen: {
     require: true,
     type: String,
   },
-  pdesc: {
+  rating: {
+    require: true,
+    type: String,
+  },
+  imageURL: {
+    require: true,
+    type: String,
+  },
+  distance: {
     require: true,
     type: String,
   },
